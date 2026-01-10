@@ -4,7 +4,7 @@ const channels = [
   {
     icon: Mail,
     name: "Email",
-    color: "from-primary to-[hsl(190_74%_59%)]",
+    color: "from-[hsl(280_85%_55%)] to-[hsl(260_75%_50%)]",
     features: [
       "Custom domain verification",
       "HTML & plain text templates",

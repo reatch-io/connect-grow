@@ -1,4 +1,4 @@
-import { Sparkles } from "lucide-react";
+import logo from "@/assets/reatch-logo.png";
 
 const Footer = () => {
   return (
@@ -8,9 +8,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-[hsl(190_74%_59%)] flex items-center justify-center">
-                <Sparkles className="w-5 h-5 text-primary-foreground" />
-              </div>
+              <img src={logo} alt="Reatch.io" className="w-8 h-8 object-contain" />
               <span className="text-xl font-bold text-foreground">Reatch.io</span>
             </div>
             <p className="text-sm text-muted-foreground">
