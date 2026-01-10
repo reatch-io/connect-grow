@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import logo from "@/assets/reatch-logo.png";
 
 const CTASection = () => {
   return (
@@ -10,9 +11,9 @@ const CTASection = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
-          {/* Icon */}
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-[hsl(190_74%_59%)] mb-8">
-            <Sparkles className="w-8 h-8 text-primary-foreground" />
+          {/* Logo */}
+          <div className="inline-flex items-center justify-center w-20 h-20 mb-8">
+            <img src={logo} alt="Reatch.io" className="w-full h-full object-contain" />
           </div>
           
           {/* Headline */}

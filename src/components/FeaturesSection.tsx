@@ -1,13 +1,10 @@
 import { 
-  Mail, 
-  MessageCircle, 
-  BarChart3, 
-  Users, 
   Zap, 
-  Shield,
+  Users, 
+  BarChart3, 
   Target,
-  Clock,
-  Code
+  Code,
+  Shield
 } from "lucide-react";
 
 const features = [
