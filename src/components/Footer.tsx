@@ -1,8 +1,6 @@
 import logo from "@/assets/reatch-logo.png";
-
 const Footer = () => {
-  return (
-    <footer className="border-t border-border bg-secondary/30 py-12">
+  return <footer className="border-t border-border bg-secondary/30 py-12">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
@@ -32,8 +30,8 @@ const Footer = () => {
             <h4 className="font-semibold text-foreground mb-4">Company</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><a href="#" className="hover:text-foreground transition-colors">About</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Blog</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Careers</a></li>
+              
+              
               <li><a href="#" className="hover:text-foreground transition-colors">Contact</a></li>
             </ul>
           </div>
@@ -44,17 +42,15 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a></li>
               <li><a href="#" className="hover:text-foreground transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Security</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">GDPR</a></li>
+              
+              
             </ul>
           </div>
         </div>
         
         {/* Bottom bar */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-muted-foreground">
-            © 2024 Reatch.io. All rights reserved.
-          </p>
+          <p className="text-sm text-muted-foreground">© 2026 Reatch.io. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -74,8 +70,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
