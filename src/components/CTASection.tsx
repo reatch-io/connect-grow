@@ -21,23 +21,16 @@ const CTASection = () => {
           
           <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto">
             Join thousands of businesses using Reatch.io to build stronger customer relationships. 
-            Start your free trial today — no credit card required.
+            Create your account now and get free messages — no credit card required.
           </p>
           
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button variant="hero" size="xl">
-              Start Free Trial <ArrowRight className="w-5 h-5 ml-1" />
-            </Button>
-            <Button variant="outline" size="xl">
-              Talk to Sales
+            <Button variant="hero" size="xl"
+                    onClick={() => window.open("https://app.reatch.io", "_blank")}>
+              Start Engaging <ArrowRight className="w-5 h-5 ml-1" />
             </Button>
           </div>
-          
-          {/* Trust indicators */}
-          <p className="text-sm text-muted-foreground mt-8">
-            ✓ 14-day free trial    ✓ Cancel anytime
-          </p>
         </div>
       </div>
     </section>;

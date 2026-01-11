@@ -38,11 +38,10 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 fade-in-up" style={{
           animationDelay: '0.3s'
         }}>
-            <Button variant="hero" size="xl">
-              Start Free Trial <ArrowRight className="w-5 h-5 ml-1" />
-            </Button>
-            <Button variant="outline" size="xl">
-              <Play className="w-5 h-5 mr-1" /> Watch Demo
+            <Button variant="hero" size="xl"
+                    onClick={() => window.open("https://app.reatch.io", "_blank")}
+            >
+              Get started and get 10 free messages <ArrowRight className="w-5 h-5 ml-1" />
             </Button>
           </div>
           
