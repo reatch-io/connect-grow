@@ -3,12 +3,12 @@ const channels = [{
   icon: Mail,
   name: "Email",
   color: "from-[hsl(280_85%_55%)] to-[hsl(260_75%_50%)]",
-  features: ["Custom domain verification", "HTML & plain text templates", "Open & click tracking", "Bounce management", "A/B testing support (coming soon)"]
+  features: ["Custom domain verification", "HTML & plain text templates", "Open & click tracking", "Bounce management"]
 }, {
   icon: MessageCircle,
   name: "WhatsApp",
   color: "from-[hsl(142_70%_45%)] to-[hsl(142_76%_36%)]",
-  features: ["Business API integration", "Template messages", "Media rich content", "Two-way conversations", "Quick replies & buttons"]
+  features: ["Business API integration", "Template messages", "Media rich content", "Quick replies & buttons"]
 }];
 const ChannelsSection = () => {
   return <section id="channels" className="py-24 relative">

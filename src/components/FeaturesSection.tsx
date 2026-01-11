@@ -35,8 +35,8 @@ const features = [
   },
   {
     icon: Shield,
-    title: "Enterprise Security",
-    description: "Bank-grade encryption, GDPR compliance, and secure data management at scale."
+    title: "Secure by Design",
+    description: "Built with strong data protection practices, encryption, and privacy-first architecture to keep your customer data safe."
   }
 ];
 

@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const PricingSection = () => {
   const [customMessages, setCustomMessages] = useState(10000);
-  const pricePerMessage = 0.05;
+  const pricePerMessage = 0.09;
   const customPrice = (customMessages * pricePerMessage).toFixed(2);
 
   return (
@@ -19,7 +19,7 @@ const PricingSection = () => {
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Pay only for what you use. Each message costs just{" "}
-            <span className="text-primary font-semibold">$0.05</span>
+            <span className="text-primary font-semibold">$0.09</span>
           </p>
         </div>
 
@@ -59,11 +59,12 @@ const PricingSection = () => {
               <p className="text-muted-foreground mb-2">Your Price</p>
               <p className="text-4xl font-bold text-foreground">${customPrice}</p>
               <p className="text-sm text-muted-foreground mt-2">
-                ({customMessages.toLocaleString()} × $0.05 per message)
+                ({customMessages.toLocaleString()} × $0.09 per message)
               </p>
             </div>
 
-            <Button variant="hero" className="w-full">
+            <Button variant="hero" className="w-full"
+                    onClick={() => window.open("https://app.reatch.io", "_blank")}>
               Purchase Messages <ArrowRight className="w-4 h-4" />
             </Button>
           </div>
