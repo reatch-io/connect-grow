@@ -51,11 +51,11 @@ const HeroSection = () => {
           animationDelay: '0.4s'
         }}>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold gradient-text mb-1">Unlimited</div>
+              <div className="text-3xl md:text-4xl font-bold gradient-text mb-1">unlimited</div>
               <div className="text-sm text-muted-foreground">Campaigns</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold gradient-text mb-1">Unlimited</div>
+              <div className="text-3xl md:text-4xl font-bold gradient-text mb-1">unlimited</div>
               <div className="text-sm text-muted-foreground">Active Users</div>
             </div>
             <div className="text-center">
