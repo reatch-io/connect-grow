@@ -15,7 +15,7 @@ const RefundPolicy = () => {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">1. Introduction</h2>
               <p className="leading-relaxed">
-                This Refund Policy governs refunds for purchases made with Reatch.io (“we”, “us”). Payments are processed by our Merchant of Record, Paddle. Paddle’s terms and refund procedures apply. Paddle may issue refunds in accordance with applicable consumer law and these policies. :contentReference[oaicite:6]{index=6}
+                This Refund Policy governs refunds for purchases made with ReatchIO (“we”, “us”). Payments are processed by our Merchant of Record, Paddle. Paddle’s terms and refund procedures apply. Paddle may issue refunds in accordance with applicable consumer law and these policies. :contentReference[oaicite:6]{index=6}
               </p>
             </section>
 
@@ -42,7 +42,7 @@ const RefundPolicy = () => {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">4. Digital Services and Access</h2>
               <p className="leading-relaxed">
-                If you begin using digital services (such as accessing your Reatch.io account or using message credits) within the 14-day period, you agree that this constitutes full performance of the transaction and you lose the right to withdraw or refund for that transaction. :contentReference[oaicite:9]{index=9}
+                If you begin using digital services (such as accessing your ReatchIO account or using message credits) within the 14-day period, you agree that this constitutes full performance of the transaction and you lose the right to withdraw or refund for that transaction. :contentReference[oaicite:9]{index=9}
               </p>
             </section>
 
@@ -63,7 +63,7 @@ const RefundPolicy = () => {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">7. Chargebacks</h2>
               <p className="leading-relaxed">
-                If a chargeback or payment dispute is initiated, your Reatch.io access may be suspended immediately. Paddle reserves the right to refuse refunds in situations of fraud, refund abuse, or manipulative behavior. :contentReference[oaicite:12]{index=12}
+                If a chargeback or payment dispute is initiated, your ReatchIO access may be suspended immediately. Paddle reserves the right to refuse refunds in situations of fraud, refund abuse, or manipulative behavior. :contentReference[oaicite:12]{index=12}
               </p>
             </section>
 
