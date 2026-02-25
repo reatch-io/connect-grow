@@ -39,6 +39,12 @@
     </url>
 
     <url>
+        <loc>https://reatch.io/contact</loc>
+        <priority>0.5</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <url>
         <loc>https://www.reatch.io/</loc>
         <priority>1.0</priority>
         <changefreq>weekly</changefreq>
@@ -70,6 +76,12 @@
 
     <url>
         <loc>https://www.reatch.io/about</loc>
+        <priority>0.5</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <url>
+        <loc>https://www.reatch.io/contact</loc>
         <priority>0.5</priority>
         <changefreq>monthly</changefreq>
     </url>
