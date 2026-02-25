@@ -1,5 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
+import { breadcrumbSchema } from "@/utils/structuredData";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -20,6 +22,11 @@ const contactSchema = z.object({
 type ContactFormData = z.infer<typeof contactSchema>;
 
 const Contact = () => {
+  const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Contact", url: "/contact" }
+  ]);
+
   const { toast } = useToast();
   const [formData, setFormData] = useState<ContactFormData>({
     name: "",
@@ -92,6 +99,13 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Contact Us — Reatch.io Customer Support"
+        description="Get in touch with Reatch.io. Our team is here to help with your customer engagement, email marketing, and WhatsApp marketing questions. Contact us today!"
+        keywords="contact reatch, customer support, email marketing support, WhatsApp marketing help, contact form"
+        canonical="/contact"
+        structuredData={breadcrumbs}
+      />
       <Navbar />
       
       <main className="pt-24 pb-16">

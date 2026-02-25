@@ -1,9 +1,25 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
+import { articleSchema } from "@/utils/structuredData";
 
 const PrivacyPolicy = () => {
+  const schema = articleSchema({
+    title: "Privacy Policy — Reatch.io",
+    description: "Privacy Policy for Reatch.io customer engagement platform",
+    datePublished: "2026-01-11",
+    dateModified: "2026-01-11"
+  });
+
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Privacy Policy — Reatch.io"
+        description="Learn how Reatch.io collects, uses, and protects your data. Our privacy policy explains our commitment to protecting your information and privacy."
+        canonical="/privacy"
+        noindex={false}
+        structuredData={schema}
+      />
       <Navbar />
       <main className="pt-24 pb-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

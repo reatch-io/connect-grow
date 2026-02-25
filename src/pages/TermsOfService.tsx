@@ -1,9 +1,25 @@
 import Navbar from "@/components/Navbar.tsx";
 import Footer from "@/components/Footer.tsx";
+import SEO from "@/components/SEO";
+import { articleSchema } from "@/utils/structuredData";
 
 const TermsOfService = () => {
+  const schema = articleSchema({
+    title: "Terms of Service — Reatch.io",
+    description: "Terms and Conditions for using Reatch.io customer engagement platform",
+    datePublished: "2026-01-11",
+    dateModified: "2026-01-11"
+  });
+
   return (
       <div className="min-h-screen bg-background">
+        <SEO
+          title="Terms of Service — Reatch.io"
+          description="Read the Terms of Service for Reatch.io. Understand your rights and responsibilities when using our customer engagement platform."
+          canonical="/terms"
+          noindex={false}
+          structuredData={schema}
+        />
         <Navbar/>
         <main className="pt-24 pb-16">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

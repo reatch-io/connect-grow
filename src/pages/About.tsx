@@ -1,10 +1,24 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
+import { breadcrumbSchema } from "@/utils/structuredData";
 import { Users, Target, Zap, Heart } from "lucide-react";
 
 const About = () => {
+  const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "About", url: "/about" }
+  ]);
+
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="About Us — Reatch.io | Empowering Business Communication"
+        description="Learn about Reatch.io's mission to democratize customer engagement. Discover how we help businesses connect with customers through Email, WhatsApp, and SMS from one unified platform."
+        keywords="about reatch, customer engagement platform, business communication, email marketing company, WhatsApp marketing platform"
+        canonical="/about"
+        structuredData={breadcrumbs}
+      />
       <Navbar />
       
       <main className="pt-24 pb-16">

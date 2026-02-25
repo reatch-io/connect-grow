@@ -1,9 +1,25 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
+import { articleSchema } from "@/utils/structuredData";
 
 const RefundPolicy = () => {
+  const schema = articleSchema({
+    title: "Refund Policy — Reatch.io",
+    description: "Refund Policy for Reatch.io customer engagement platform",
+    datePublished: "2026-01-11",
+    dateModified: "2026-01-11"
+  });
+
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Refund Policy — Reatch.io"
+        description="Learn about Reatch.io's refund policy. Understand our terms for refunds and cancellations for our customer engagement platform services."
+        canonical="/refund"
+        noindex={false}
+        structuredData={schema}
+      />
       <Navbar />
       <main className="pt-24 pb-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -15,7 +31,7 @@ const RefundPolicy = () => {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">1. Introduction</h2>
               <p className="leading-relaxed">
-                This Refund Policy governs refunds for purchases made with ReatchIO (“we”, “us”). Payments are processed by our Merchant of Record, Paddle. Paddle’s terms and refund procedures apply. Paddle may issue refunds in accordance with applicable consumer law and these policies.
+                This Refund Policy governs refunds for purchases made with ReatchIO ("we", "us"). Payments are processed by our Merchant of Record, Paddle. Paddle's terms and refund procedures apply. Paddle may issue refunds in accordance with applicable consumer law and these policies.
               </p>
             </section>
 
