@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 import logo from "@/assets/reatch-logo.png";
 const CTASection = () => {
   return <section className="py-24 relative overflow-hidden">
@@ -11,7 +12,7 @@ const CTASection = () => {
         <div className="max-w-3xl mx-auto text-center">
           {/* Logo */}
           <div className="inline-flex items-center justify-center w-20 h-20 mb-8">
-            <img src={logo} alt="Reatch.io" className="w-full h-full object-contain" />
+            <Image src={logo} alt="Reatch.io" width={80} height={80} className="w-full h-full object-contain" />
           </div>
           
           {/* Headline */}
@@ -26,9 +27,10 @@ const CTASection = () => {
           
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button variant="hero" size="xl"
-                    onClick={() => window.open("https://app.reatch.io", "_blank")}>
-              Start Engaging <ArrowRight className="w-5 h-5 ml-1" />
+            <Button variant="hero" size="xl" asChild>
+              <a href="https://app.reatch.io" target="_blank" rel="noopener noreferrer">
+                Start Engaging <ArrowRight className="w-5 h-5 ml-1" />
+              </a>
             </Button>
           </div>
         </div>

@@ -1,26 +1,39 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import SEO from "@/components/SEO";
 import { breadcrumbSchema } from "@/utils/structuredData";
 import { Users, Target, Zap, Heart } from "lucide-react";
 
-const About = () => {
-  const breadcrumbs = breadcrumbSchema([
-    { name: "Home", url: "/" },
-    { name: "About", url: "/about" }
-  ]);
+export const metadata: Metadata = {
+  title: "About Us — Reatch.io | Empowering Business Communication",
+  description:
+    "Learn about Reatch.io's mission to democratize customer engagement. Discover how we help businesses connect with customers through Email, WhatsApp, and SMS from one unified platform.",
+  keywords:
+    "about reatch, customer engagement platform, business communication, email marketing company, WhatsApp marketing platform",
+  alternates: { canonical: "https://reatch.io/about" },
+  openGraph: {
+    type: "website",
+    title: "About Us — Reatch.io | Empowering Business Communication",
+    description:
+      "Learn about Reatch.io's mission to democratize customer engagement.",
+    url: "https://reatch.io/about",
+  },
+};
 
+const breadcrumbs = breadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "About", url: "/about" },
+]);
+
+export default function AboutPage() {
   return (
     <div className="min-h-screen bg-background">
-      <SEO
-        title="About Us — Reatch.io | Empowering Business Communication"
-        description="Learn about Reatch.io's mission to democratize customer engagement. Discover how we help businesses connect with customers through Email, WhatsApp, and SMS from one unified platform."
-        keywords="about reatch, customer engagement platform, business communication, email marketing company, WhatsApp marketing platform"
-        canonical="/about"
-        structuredData={breadcrumbs}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
       />
       <Navbar />
-      
+
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-6">
           {/* Hero Section */}
@@ -32,19 +45,23 @@ const About = () => {
               Empowering Businesses to Connect
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              At Reatch.io, we believe every business deserves powerful tools to engage 
-              with their customers across every channel, without complexity.
+              At Reatch.io, we believe every business deserves powerful tools to
+              engage with their customers across every channel, without
+              complexity.
             </p>
           </div>
 
           {/* Mission Section */}
           <div className="max-w-4xl mx-auto mb-20">
             <div className="bg-card rounded-2xl border border-border p-8 md:p-12">
-              <h2 className="text-2xl font-bold text-foreground mb-4">Our Mission</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-4">
+                Our Mission
+              </h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                We're on a mission to democratize customer engagement. Whether you're a 
-                startup or an enterprise, Reatch.io provides the infrastructure to reach 
-                your customers via Email, WhatsApp, SMS, and more — all from one unified platform.
+                We're on a mission to democratize customer engagement. Whether
+                you're a startup or an enterprise, Reatch.io provides the
+                infrastructure to reach your customers via Email, WhatsApp, SMS,
+                and more — all from one unified platform.
               </p>
             </div>
           </div>
@@ -59,37 +76,47 @@ const About = () => {
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Users className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-semibold text-foreground mb-2">Customer First</h3>
+                <h3 className="font-semibold text-foreground mb-2">
+                  Customer First
+                </h3>
                 <p className="text-sm text-muted-foreground">
-                  Every decision we make starts with how it benefits our customers.
+                  Every decision we make starts with how it benefits our
+                  customers.
                 </p>
               </div>
-              
+
               <div className="bg-card rounded-xl border border-border p-6 text-center">
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Target className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-semibold text-foreground mb-2">Simplicity</h3>
+                <h3 className="font-semibold text-foreground mb-2">
+                  Simplicity
+                </h3>
                 <p className="text-sm text-muted-foreground">
                   Powerful features shouldn't mean complicated interfaces.
                 </p>
               </div>
-              
+
               <div className="bg-card rounded-xl border border-border p-6 text-center">
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Zap className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-semibold text-foreground mb-2">Innovation</h3>
+                <h3 className="font-semibold text-foreground mb-2">
+                  Innovation
+                </h3>
                 <p className="text-sm text-muted-foreground">
-                  We constantly push boundaries to deliver cutting-edge solutions.
+                  We constantly push boundaries to deliver cutting-edge
+                  solutions.
                 </p>
               </div>
-              
+
               <div className="bg-card rounded-xl border border-border p-6 text-center">
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Heart className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-semibold text-foreground mb-2">Transparency</h3>
+                <h3 className="font-semibold text-foreground mb-2">
+                  Transparency
+                </h3>
                 <p className="text-sm text-muted-foreground">
                   Clear pricing, honest communication, no hidden surprises.
                 </p>
@@ -104,18 +131,21 @@ const About = () => {
             </h2>
             <div className="prose prose-lg max-w-none text-muted-foreground">
               <p className="mb-4">
-                Reatch.io was born from a simple observation: businesses were struggling to 
-                manage customer communications across multiple channels. Email here, WhatsApp 
-                there, SMS somewhere else — it was chaos.
+                Reatch.io was born from a simple observation: businesses were
+                struggling to manage customer communications across multiple
+                channels. Email here, WhatsApp there, SMS somewhere else — it
+                was chaos.
               </p>
               <p className="mb-4">
-                We built Reatch.io to solve this problem. A single platform where you can 
-                manage all your customer outreach, track engagement, and scale your 
-                communication efforts without breaking the bank.
+                We built Reatch.io to solve this problem. A single platform
+                where you can manage all your customer outreach, track
+                engagement, and scale your communication efforts without
+                breaking the bank.
               </p>
               <p>
-                Today, we're proud to help businesses of all sizes connect with their 
-                customers in meaningful ways. And we're just getting started.
+                Today, we're proud to help businesses of all sizes connect with
+                their customers in meaningful ways. And we're just getting
+                started.
               </p>
             </div>
           </div>
@@ -125,6 +155,5 @@ const About = () => {
       <Footer />
     </div>
   );
-};
+}
 
-export default About;

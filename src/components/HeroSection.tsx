@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 const HeroSection = () => {
   return <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden bg-gradient-to-b from-background via-secondary/30 to-background">
       {/* Background glow effects */}
@@ -38,10 +38,10 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 fade-in-up" style={{
           animationDelay: '0.3s'
         }}>
-            <Button variant="hero" size="xl"
-                    onClick={() => window.open("https://app.reatch.io", "_blank")}
-            >
-              Get started and get 10 free messages <ArrowRight className="w-5 h-5 ml-1" />
+            <Button variant="hero" size="xl" asChild>
+              <a href="https://app.reatch.io" target="_blank" rel="noopener noreferrer">
+                Get started and get 10 free messages <ArrowRight className="w-5 h-5 ml-1" />
+              </a>
             </Button>
           </div>
           

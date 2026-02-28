@@ -1,3 +1,5 @@
+"use client";
+
 import { Mail, MessageCircle, Check } from "lucide-react";
 import { useEffect } from "react";
 

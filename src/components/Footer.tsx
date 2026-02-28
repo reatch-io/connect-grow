@@ -1,3 +1,4 @@
+import Image from "next/image";
 import logo from "@/assets/reatch-logo.png";
 const Footer = () => {
   return <footer className="border-t border-border bg-secondary/30 py-12">
@@ -6,7 +7,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <img src={logo} alt="Reatch.io" className="w-8 h-8 object-contain" />
+              <Image src={logo} alt="Reatch.io" width={32} height={32} className="w-8 h-8 object-contain" />
               <span className="text-xl font-bold text-foreground">Reatch.io</span>
             </div>
             <p className="text-sm text-muted-foreground">

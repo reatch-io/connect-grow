@@ -1,3 +1,5 @@
+"use client";
+
 import { TrendingUp, Eye, MousePointer, Users } from "lucide-react";
 import { useEffect } from "react";
 

@@ -1,4 +1,6 @@
-import { 
+"use client";
+
+import {
   Zap, 
   Users, 
   BarChart3, 
