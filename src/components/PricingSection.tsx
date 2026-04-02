@@ -418,6 +418,24 @@ const PricingSection = () => {
         <PlanCards plans={plans} annual={annual} />
         <FeatureTable plans={plans} features={features} support={support} />
 
+        {/* Custom plan CTA */}
+        <div className="mt-16 rounded-2xl border border-border bg-card p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <h3 className="text-xl font-bold text-foreground mb-2">Need a custom plan?</h3>
+            <p className="text-muted-foreground max-w-lg">
+              Have specific volume requirements, compliance needs, or a unique setup?
+              Reach out and we'll put together a plan tailored to your business.
+            </p>
+          </div>
+          <Button
+            variant="hero"
+            className="shrink-0"
+            onClick={() => window.location.href = "/contact"}
+          >
+            Contact Sales <ArrowRight className="w-4 h-4 ml-1" />
+          </Button>
+        </div>
+
       </div>
     </section>
   );
